@@ -1,0 +1,18 @@
+package upload;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class UploadServiceImp implements UploadService {
+
+	@Autowired
+	UploadDAO uploaddao;
+	
+	
+	@Override
+	public void insertUpload(UploadForm form) {
+		uploaddao.insertUpload(form);
+	}
+
+	
+	
+}

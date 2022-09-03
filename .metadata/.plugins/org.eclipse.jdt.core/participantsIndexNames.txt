@@ -1,0 +1,9 @@
+INDEX VERSION 1.131
+C:\BootProject\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\340489384.index
+\myboot1\src\main\java
+C:\BootProject\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3404989769.index
+\myboot1\src\main\java
+C:\BootProject\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1992911574.index
+\myboot1\src\main\java
+C:\BootProject\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1053330384.index
+\myboot1\src\main\java

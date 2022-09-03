@@ -1,0 +1,19 @@
+package com.example.demo;
+
+import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
+
+@MapperScan(basePackages = "board.spring.mybatis")
+@ComponentScan(basePackages = "Board")
+@ComponentScan(basePackages = "upload")
+@ComponentScan
+@SpringBootApplication
+public class Myboot1Application {
+
+	public static void main(String[] args) {
+		SpringApplication.run(Myboot1Application.class, args);
+	}
+
+}

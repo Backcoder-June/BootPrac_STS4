@@ -1,0 +1,9 @@
+package upload;
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface UploadDAO {
+	public void uploadResult(UploadDTO dto);
+
+}

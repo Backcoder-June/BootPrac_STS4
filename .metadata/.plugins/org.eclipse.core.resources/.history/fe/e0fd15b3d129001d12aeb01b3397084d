@@ -1,0 +1,50 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="js/jquery-3.6.0.min.js" ></script>
+<script>
+$(document).ready(function(){
+	var name = $("#name").val; 
+	$("#checkbtn").on("click", function(e){
+		e.preventDefault();
+	$.ajax({
+		url : "uploadname",
+		dataType : "json",
+		type : "get",
+		data : {"name" : name },
+		success : function(resp){
+			$("#resultdiv").html(resp)
+		}
+		
+		
+		
+	}); // onclick
+	});//ajax
+	
+	
+	
+	
+});
+</script>
+
+</head>
+<body>
+
+
+<h1> 내가 업로드한 파일 보기</h1>
+<form action="uploadName" method="get">
+작성자 : <input type="text" id="name" name="name"> <Br>
+<input id="checkbtn" type="button" value="내 파일 확인">
+</form>
+
+
+
+
+
+</body>
+</html>

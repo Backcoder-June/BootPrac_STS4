@@ -1,0 +1,19 @@
+package upload;
+
+import java.util.List;
+
+import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Repository;
+
+@Mapper
+@Repository("uploaddao")
+public interface UploadDAO {
+	
+	public void insertUpload(UploadForm form);
+	
+	public List<UploadForm> fbn(String name);
+	
+	
+	
+	
+}
